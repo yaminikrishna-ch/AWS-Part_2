@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  
+cloud:
+  aws:
+    region:
+      static: us-west-1
+      auto: false
+    credentials:
+      access-key: AccessKey for SQS
+      secret-key: Secret Key for SQS
+      bucketName: adp1234
+      endpointUrl: https://s3.us-west-1.amazonaws.com 
+    end-point:
+      uri: Queue End point URI
