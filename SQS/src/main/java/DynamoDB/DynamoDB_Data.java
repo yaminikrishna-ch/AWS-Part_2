@@ -15,13 +15,13 @@ public class DynamoDB_Data {
 	AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard().build();
 DynamoDB dynamoDB = new DynamoDB(client);
 Table table = dynamoDB.getTable("Employees");
-private String accessKey = "AKIAXMRCYLQMERF3RGVP"; 
+private String accessKey = "AccessKey"; 
 //@Value("${cloud.aws.credentials.secret-Key1}")
-private String secretKey = "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";
+private String secretKey = "Secret Key";
 //@Value("${cloud.aws.credentials.region}")
 private String region = "us-west-1";
 //@Value("${cloud.aws.credentials.gateway_end_point}")
-private String gateway_end_point = "https://1e0wk8bifa.execute-api.us-west-1.amazonaws.com/Test";
+private String gateway_end_point = "API end point";
 public void StringToJson(String str) {
 	try {
 		JSONObject json= new JSONObject(str);
